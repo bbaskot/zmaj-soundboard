@@ -191,7 +191,7 @@ export default function App() {
     "require": require('./assets/sounds/zmajPrepadaBika.mp3'),
     "name": "Zmaj prepada bika"
   },]
-  let facePath = require("./assets/mute.png");
+  let facePath = require("./assets/zmaj_cuti150.png");
   async function playSound(name) {
     try{
       const { sound } = await Audio.Sound.createAsync(name);
@@ -233,7 +233,7 @@ export default function App() {
         if(numOfClicks.current%3 == 0){
           playAd();
         }
-        rand = Math.floor(Math.random() * 3);
+        rand = Math.floor(Math.random() * 50);
         playSound(soundlist[rand].require);
       }
   }
